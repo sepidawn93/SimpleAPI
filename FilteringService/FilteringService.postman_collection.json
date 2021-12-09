@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "47d8e3cf-d157-48bb-8cbf-7ff75bc8e4a5",
+		"name": "FilteringService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "postSquares",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"main\": {\n        \"x\": 0,\n        \"y\" : 0,\n        \"width\": 10,\n        \"height\": 20\n    },\n    \"input\": [\n        {\n        \"x\": 2,\n        \"y\": 18,\n        \"width\": 5,\n        \"height\": 4},\n        {\n        \"x\": 12,\n        \"y\": 18,\n        \"width\": 5,\n        \"height\": 4},\n        {\n        \"x\": -1,\n        \"y\": -1,\n        \"width\": 5,\n        \"height\": 4}\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSquares",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
